@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    background-color: white;
+    border-radius: 10px;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tab-content {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .nav-tabs {
+    background-color: #e9ecef;
+    border-radius: 10px;
+  }
+  
+  .nav-link {
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .nav-link.active {
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-bottom-color: white;
+  }
+  
+  .nav-link.disabled {
+    color: #6c757d;
+  }
+  
+.header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .logo {
+    width: 100px; /* Adjust the width as needed */
+    height: auto;
+  }
+  

@@ -1,0 +1,17 @@
+click
+Flask
+Flask-Cors==4.0.0
+importlib-metadata
+itsdangerous
+Jinja2
+MarkupSafe
+psycopg2==2.9.7
+pymongo==3.12.0
+python-dotenv==1.0.0
+six==1.16.0
+SQLAlchemy==2.0.20
+tqdm
+typing_extensions==4.7.1
+Werkzeug
+zipp
+bson

@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  python:
+    image: samsung-aml-server
+    build: ./flask_server
+    working_dir: /app
+    volumes:
+      - ./flask_server:/app
+    command: ["python", "server.py"]
+    depends_on:
+      - mongodb
+      - postgres
+    # expose:
+    #   - "5000"
+    ports:
+      - "5000:5000"
+
+  react:
+    image: samsung-aml-react-app
+    build: ./client
+    working_dir: /app
+    volumes:
+      - ./client:/app
+    command: ["npm", "start"]
+    depends_on:
+      - python
+    ports:
+      - "3000:3000"
+
+  mongodb:
+    image: mongo:latest
+    # environment:
+    #   MONGO_INITDB_ROOT_USERNAME: <your_username>
+    #   MONGO_INITDB_ROOT_PASSWORD: <your_password>
+    ports:
+      - "27017:27017"
+
+  postgres:
+    image: postgres:latest
+    environment:
+      # POSTGRES_HOST: localhost
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: postgres
+    # expose:
+    #   - 5432
+    ports:
+      - "5432:5432"  # 8001:5432
+    
