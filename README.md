@@ -91,7 +91,8 @@ docker-compose up -d`
 
 ### _MONGODB_
 _Start service:_  <br/>  
-`brew services start mongodb/brew/mongodb-community`
+`brew services start mongodb/brew/mongodb-community`  <br/>  
+
 _Stop service:_  <br/>  
 `brew services start mongodb/brew/mongodb-community`
 
