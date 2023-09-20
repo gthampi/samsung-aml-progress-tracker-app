@@ -64,6 +64,8 @@ _Restart after changes to yaml:_  <br/>
 `docker-compose down
 docker-compose up -d`
 
+_In case of memory issues:_  <br/>
+`docker system prune`
 
 ---
 ---
